@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+/* This pen */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body{
+  background:#f7f7f7;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.heading{
+  text-align: center;
+  font-size: 3.5rem;
+  padding:1rem;
+  color:#666;
+}
+
+.heading span{
+  color:var(--red);
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+  background-image: url(images/contact1.jpg);
+  color: white;
+  width: 100%; height: 400px;  background-size: 100% 100%;
+}
+
+.container {
+  padding: 0 16px;
+}
+h1{
+    font-size: 50px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+/* This pen */
+.order .row{
+  padding:2rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  background:#fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  border-radius: .5rem;
+}
+
+.order .row .image{
+  flex:1 1 30rem;
+}
+
+.order .row .image img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+.order .row form{
+  flex:1 1 50rem;
+  padding:1rem;
+}
+
+.order .row form .inputBox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.order .row form .inputBox input, .order .row form textarea{
+  padding:1rem;
+  margin:1rem 0;
+  font-size: 1.7rem;
+  color:#333;
+  text-transform: none;
+  border:.1rem solid rgba(0,0,0,.3);
+  border-radius: .5rem;
+  width:49%;
+}
+
+.order .row form textarea{
+  width:100%;
+  resize: none;
+  height:15rem;
+}
+
+.order .row form .btn{
+  background:none;
+}
+
+.order .row form .btn:hover{
+  background:var(--red);
+}
+
+
+.footer{
+  background:#000;
+  text-align: center;
+}
+
+.footer .share{
+  display: flex;
+  gap:1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .credit{
+  padding:2.5rem 1rem;
+  color:#fff;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.footer .credit span{
+  color:var(--red);
+}
+.btn{
+  display: inline-block;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--red);
+  color:var(--red);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: 1rem;
+}
+
+.btn::before{
+  content: '';
+  position: absolute;
+  top:0; right: 0;
+  width:0%;
+  height:100%;
+  background:var(--red);
+  transition: .3s linear;
+  z-index: -1;
+}
+
+.btn:hover::before{
+  width:100%;
+  left: 0;
+}
+
+.btn:hover{
+  color:#fff;
+}
+
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+flex-wrap: wrap;
+}
+
+.container .card {
+    position: relative;
+    border-radius: 10px;
+}
+
+.container .card .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.container .card:nth-child(1) .icon {
+    background: #e07768;
+}
+
+.container .card:nth-child(2) .icon {
+    background: #6eadd4;
+}
+
+.container .card:nth-child(3) .icon {
+    background: #4aada9;
+}
+
+
+.container .card .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #ff0057;
+    transform: translateY(0px);
+}
+
+.container .card .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.container .card .face.face1 .content i{
+    max-width: 100px;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.container .card .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+} 
+
+.container a {
+    text-decoration: none;
+    color: #414141;
+}
+
+</style>
+</head>
+<body>
+  <nav style="height: 60px;" class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a style="font-size: 25px; color:red;" class="navbar-brand" href="#">FOODIES</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul  class="navbar-nav ml-auto"">
+        <li style="font-size: 20px; color:red;" class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li  style="font-size: 20px; color:red;" class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li   style="font-size: 20px; color:red;" class="nav-item">
+          <a class="nav-link" href="#">Blogs</a>
+        </li>  
+        <li   style="font-size: 20px; color:red;" class="nav-item">
+          <a class="nav-link" href="#">Chefs</a>
+        </li>  
+        <li   style="font-size: 20px; color:red;" class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+  <br>
+
+<div class="about-section">
+  <h1 >Contact Us </h1>
+</div>
+<br>
+<section class="order" id="order">
+
+    <h1 class="heading">Get <span> in </span>Touch</h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="images/burger.jpg" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="text" placeholder="number">
+                <input type="text" placeholder="food you order">
+            </div>
+
+            <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Submitt" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- order section ends -->
+<div class="container">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <div class="icon">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h3>
+                    <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">Foodies123</a>
+                </h3>
+                <p>This is our Official instagram Acount.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <div class="icon">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h3>
+                    <a href="https://twitter.com/AdamDipinto" target="_blank">@Foodies</a>
+                </h3>
+                <p>This is our Official Twitter Acount</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <div class="icon">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h3>
+                    <a href="https://github.com/atom888" target="_blank">foodies@gmail.com</a>
+                </h3>
+                <p>This is our Official Gmail Acount</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<section class="footer">
+
+  <div class="share">
+      <a href="#" class="btn">facebook</a>
+      <a href="#" class="btn">twitter</a>
+      <a href="#" class="btn">instagram</a>
+      <a href="#" class="btn">pinterest</a>
+      <a href="#" class="btn">linkedin</a>
+  </div>
+
+  <h1 class="credit"> created by WEB STUDENT DESIGN </span> | all rights reserved! </h1>
+
+</section>
+</body>
+</html>
